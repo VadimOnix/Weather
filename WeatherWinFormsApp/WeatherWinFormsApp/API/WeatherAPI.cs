@@ -1,12 +1,18 @@
-﻿using RestSharp;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeatherWinFormsApp;
 
-namespace WeatherWinFormsApp.MODEL
+
+namespace WeatherWinFormsApp.API
 {
     class WeatherAPI
     {
@@ -14,7 +20,7 @@ namespace WeatherWinFormsApp.MODEL
 
         // Указание клиенту базовой ссылки
         private RestClient restClient = new RestClient();
-        
+
         public WeatherAPI()
         {
             // Создаём словарь заголовоков
@@ -28,7 +34,7 @@ namespace WeatherWinFormsApp.MODEL
             restClient.AddDefaultHeaders(headers);
         }
 
-        public CurrentWeather GetCurrentWeatherByCityName(string cityName)
+        public CurrentWeatherResponceType GetResponceOnOneDayByCityName(string cityName)
         {
             // создаём запрос
             var request = new RestRequest("weather", DataFormat.Json);
@@ -39,8 +45,8 @@ namespace WeatherWinFormsApp.MODEL
             // вызываем у клиента метод Get с настройками request
             var response = restClient.Get(request);
 
-            CurrentWeather currentWeather = new CurrentWeather();
-            return currentWeather;
+            var formatedResponce = JsonConvert.DeserializeObject<CurrentWeatherResponceType>(response.Content);
+            return formatedResponce;
         }
     }
 }

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeatherWinFormsApp;
+using WeatherWinFormsApp.API;
 using WeatherWinFormsApp.MODEL;
 
 namespace WeatherWinFormsApp
@@ -22,7 +24,7 @@ namespace WeatherWinFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CurrentWeather currentWeather = WeatherAPI.GetCurrentWeatherByCityName("London");
+            var currentWeather = WeatherAPI.GetResponceOnOneDayByCityName("Сыктывкар");
         }
 
     }
