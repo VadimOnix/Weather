@@ -34,7 +34,7 @@ namespace WeatherWinFormsApp.API
         public int humidity;
         public int sea_level;
         public int grnd_level;
-        public int temp_kf;
+        public float temp_kf;
     }
     class Wind
     {
