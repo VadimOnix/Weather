@@ -1,15 +1,7 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using WeatherWinFormsApp;
 
 
 namespace WeatherWinFormsApp.API
@@ -19,15 +11,17 @@ namespace WeatherWinFormsApp.API
         // Клиент, который будет стучаться на сервер с погодой
 
         // Указание клиенту базовой ссылки
-        private RestClient restClient = new RestClient();
+        private readonly RestClient restClient = new RestClient();
 
         public WeatherAPI()
         {
             // Создаём словарь заголовоков
-            Dictionary<string, string> headers = new Dictionary<string, string>();
-            // Добвляем значения в словарь
-            headers.Add("x-rapidapi-host", "community-open-weather-map.p.rapidapi.com");
-            headers.Add("x-rapidapi-key", "4b3ce770c3msh089eaf260cd3ff2p1c7618jsnf7c6643d955c");
+            Dictionary<string, string> headers = new Dictionary<string, string>
+            {
+                // Добвляем значения в словарь
+                { "x-rapidapi-host", "community-open-weather-map.p.rapidapi.com" },
+                { "x-rapidapi-key", "4b3ce770c3msh089eaf260cd3ff2p1c7618jsnf7c6643d955c" }
+            };
 
             // инициализация клиента
             restClient.BaseUrl = new Uri("https://community-open-weather-map.p.rapidapi.com/");
@@ -47,6 +41,23 @@ namespace WeatherWinFormsApp.API
 
             var formatedResponce = JsonConvert.DeserializeObject<CurrentWeatherResponceType>(response.Content);
             return formatedResponce;
+        }
+
+        public void GetFiveDaysResponceByCityName(string cityName)
+        {
+            // создаём запрос
+            var request = new RestRequest("forecast", DataFormat.Json);
+            request.AddParameter("lang", "ru");
+            request.AddParameter("units", "metric");
+            request.AddParameter("mode", "json");
+            request.AddParameter("q", cityName);
+
+            // вызываем у клиента метод Get с настройками request
+            var response = restClient.Get(request);
+
+
+            var formatedResponse = JsonConvert.DeserializeObject<FiveDaysWeatherResponceType>(response.Content);
+            int a = 10;
         }
     }
 }
