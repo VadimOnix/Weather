@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using WeatherWinFormsApp;
 using WeatherWinFormsApp.API;
 using WeatherWinFormsApp.MODEL;
+using WeatherWinFormsApp.UTILS;
 
 namespace WeatherWinFormsApp
 {
@@ -20,13 +21,35 @@ namespace WeatherWinFormsApp
         public MainForm()
         {
             InitializeComponent();
+            this.Text = new ConnectChecker().IsAvailable() ? "Доступно!" : "Недоступно";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            var currentWeather = WeatherAPI.GetResponceOnOneDayByCityName("Сыктывкар");
+            this.Close();
         }
 
+        private void tbSearch_Enter(object sender, EventArgs e)
+        {
+            pnSearchBorder.BackColor = Color.White;
+        }
+
+        private void tbSearch_Leave(object sender, EventArgs e)
+        {
+            pnSearchBorder.BackColor = Color.FromArgb(108, 117, 125);
+        }
+
+        private void btnSetToday_Click(object sender, EventArgs e)
+        {
+                pnMenuTab.Top = btnSetToday.Top;
+                pnMenuTab.Height = btnSetToday.Height;
+        }
+
+        private void btnSetWeek_Click(object sender, EventArgs e)
+        {
+            pnMenuTab.Height = btnSetWeek.Height;
+            pnMenuTab.Top = btnSetWeek.Top;
+        }
     }
 }
 

@@ -56,6 +56,8 @@
     <Compile Include="API\CommonTypes.cs" />
     <Compile Include="API\FiveDaysWeatherResponceType.cs" />
     <Compile Include="API\CurrentWeatherResponceType.cs" />
+    <Compile Include="CONTROLLERS\AppController.cs" />
+    <Compile Include="CONTROLLERS\ConvertDataController.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +80,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -94,7 +97,50 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CONTROLLERS\" />
+    <Content Include="assets\img\icons_png\bad_network.png" />
+    <Content Include="assets\img\icons_png\calendar.png" />
+    <Content Include="assets\img\icons_png\close_red.png" />
+    <Content Include="assets\img\icons_png\good_network.png" />
+    <Content Include="assets\img\icons_png\Search_ico.png" />
+    <Content Include="assets\img\icons_png\today.png" />
+    <Content Include="assets\img\icons_png\weather\celsius.png" />
+    <Content Include="assets\img\icons_png\weather\cloudy-day.png" />
+    <Content Include="assets\img\icons_png\weather\cloudy.png" />
+    <Content Include="assets\img\icons_png\weather\crescent-moon-1.png" />
+    <Content Include="assets\img\icons_png\weather\crescent-moon-2.png" />
+    <Content Include="assets\img\icons_png\weather\crescent-moon.png" />
+    <Content Include="assets\img\icons_png\weather\fahrenheit.png" />
+    <Content Include="assets\img\icons_png\weather\first-quarter.png" />
+    <Content Include="assets\img\icons_png\weather\full-moon.png" />
+    <Content Include="assets\img\icons_png\weather\half-moon.png" />
+    <Content Include="assets\img\icons_png\weather\hurricane.png" />
+    <Content Include="assets\img\icons_png\weather\lightening.png" />
+    <Content Include="assets\img\icons_png\weather\moon-1.png" />
+    <Content Include="assets\img\icons_png\weather\moon-2.png" />
+    <Content Include="assets\img\icons_png\weather\moon.png" />
+    <Content Include="assets\img\icons_png\weather\penguin.png" />
+    <Content Include="assets\img\icons_png\weather\rain-1.png" />
+    <Content Include="assets\img\icons_png\weather\rain-2.png" />
+    <Content Include="assets\img\icons_png\weather\rain-3.png" />
+    <Content Include="assets\img\icons_png\weather\rain.png" />
+    <Content Include="assets\img\icons_png\weather\rainbow.png" />
+    <Content Include="assets\img\icons_png\weather\raindrop.png" />
+    <Content Include="assets\img\icons_png\weather\snowflake-1.png" />
+    <Content Include="assets\img\icons_png\weather\snowflake.png" />
+    <Content Include="assets\img\icons_png\weather\spring.png" />
+    <Content Include="assets\img\icons_png\weather\storm-1.png" />
+    <Content Include="assets\img\icons_png\weather\storm.png" />
+    <Content Include="assets\img\icons_png\weather\summer.png" />
+    <Content Include="assets\img\icons_png\weather\sun.png" />
+    <Content Include="assets\img\icons_png\weather\thermometer.png" />
+    <Content Include="assets\img\icons_png\weather\tornado.png" />
+    <Content Include="assets\img\icons_png\weather\umbrella-1.png" />
+    <Content Include="assets\img\icons_png\weather\umbrella.png" />
+    <Content Include="assets\img\icons_png\weather\wind-1.png" />
+    <Content Include="assets\img\icons_png\weather\wind-2.png" />
+    <Content Include="assets\img\icons_png\weather\wind.png" />
+    <Content Include="assets\img\icons_png\грустный-png-2.png" />
+    <Content Include="Этапы дизайна формы.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

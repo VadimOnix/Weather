@@ -1,0 +1,31 @@
+﻿--- MainForm ---
+1. FormBorderStyle = None
+2. AutoScaleMode = None
+3. BackColor = #343a40
+4. Font = Century Gothic , Regular, 12
+5. ForeColor = White
+6. StartPosition = ScreenCenter
+
+-- Скачиваем иконки с https://www.flaticon.com/packs/weather-9 (можно зарегистрироваться через гугл аккаунт)
+
+--- Кнопки из панелей---
+1. Back Color = transparent
+2. Size = 50; 50
+3. BorderStyle = None
+4. BackgroundImage = добавить соответствующее изоюражение из папки assets
+5. BackgroundImageLayout = Stretch
+
+--- Поле поиска (TextBox) ---
+Под полем размещается узкая панель для имитации поял ввода
+Сам текстбокс делается прозрачным
+
+для TextBox
+1. BackColor = #343a40
+2. ForeColor = White
+3. BorderStyle = None
+
+для Panel
+1. BackColor = Black
+2. BorderStyle = None
+3. Size = ширина TextBox, высота 2
+
