@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\CommonTypes.cs" />
     <Compile Include="API\FiveDaysWeatherResponceType.cs" />
     <Compile Include="API\CurrentWeatherResponceType.cs" />
     <Compile Include="MainForm.cs">
