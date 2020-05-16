@@ -30,10 +30,10 @@ namespace WeatherWinFormsApp.API
         public float feels_like = 0;
         public float temp_min = 0;
         public float temp_max = 0;
-        public int pressure = 0;
+        public float pressure = 0;
         public int humidity = 0;
-        public int sea_level = 0;
-        public int grnd_level = 0;
+        public float sea_level = 0;
+        public float grnd_level = 0;
         public float temp_kf = 0;
     }
     class Wind
