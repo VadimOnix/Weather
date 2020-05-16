@@ -43,7 +43,7 @@ namespace WeatherWinFormsApp.API
             return formatedResponce;
         }
 
-        public void GetFiveDaysResponceByCityName(string cityName)
+        public FiveDaysWeatherResponceType GetFiveDaysResponceByCityName(string cityName)
         {
             // создаём запрос
             var request = new RestRequest("forecast", DataFormat.Json);
@@ -55,9 +55,8 @@ namespace WeatherWinFormsApp.API
             // вызываем у клиента метод Get с настройками request
             var response = restClient.Get(request);
 
-
-            var formatedResponse = JsonConvert.DeserializeObject<FiveDaysWeatherResponceType>(response.Content);
-            int a = 10;
+            // возвращаем преобразованный объект
+            return JsonConvert.DeserializeObject<FiveDaysWeatherResponceType>(response.Content);
         }
     }
 }
