@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace WeatherWinFormsApp.API
 {
+    class Rain
+    {
+        public float h;
+    }
     class Coord
     {
         public float lon;
@@ -48,6 +52,17 @@ namespace WeatherWinFormsApp.API
         public string country;
         public int sunrise;
         public int sunset;
+        public string pod;
     }
-
+    class City
+    {
+        public int id;
+        public string name;
+        public Coord coord;
+        public string country;
+        public int population;
+        public int timezone;
+        public int sunrise;
+        public int sunset;  
+    }
 }
