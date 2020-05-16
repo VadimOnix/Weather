@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace WeatherWinFormsApp.API
 {
-
-    public class Coord
+    class Coord
     {
-        float lon;
-        float lat;
+        public float lon;
+        public float lat;
     }
 
     class WeatherItem
@@ -29,6 +28,9 @@ namespace WeatherWinFormsApp.API
         public float temp_max;
         public int pressure;
         public int humidity;
+        public int sea_level;
+        public int grnd_level;
+        public int temp_kf;
     }
     class Wind
     {
