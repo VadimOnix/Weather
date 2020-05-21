@@ -40,16 +40,16 @@
             this.pnToday = new System.Windows.Forms.Panel();
             this.pnWeek = new System.Windows.Forms.Panel();
             this.pnWeekDay5 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lbWeekDay5Date = new System.Windows.Forms.Label();
+            this.lbWeekDay5Temp = new System.Windows.Forms.Label();
             this.pnWeekDay4 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lbWeekDay4Date = new System.Windows.Forms.Label();
+            this.lbWeekDay4Temp = new System.Windows.Forms.Label();
             this.pnWeekDay3 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbWeekDay3Date = new System.Windows.Forms.Label();
+            this.lbWeekDay3Temp = new System.Windows.Forms.Label();
             this.pnWeekDay2 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbWeekDay2Date = new System.Windows.Forms.Label();
             this.lbWeekDay2Temp = new System.Windows.Forms.Label();
             this.lbWeekCityName = new System.Windows.Forms.Label();
             this.pnWeekDay1 = new System.Windows.Forms.Panel();
@@ -76,15 +76,17 @@
             this.pnNetworkStatus = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.imgWeekDay5 = new System.Windows.Forms.Panel();
+            this.imgWeekDay4 = new System.Windows.Forms.Panel();
+            this.imgWeekDay3 = new System.Windows.Forms.Panel();
             this.imgWeekDay2 = new System.Windows.Forms.Panel();
             this.imgWeekDay1 = new System.Windows.Forms.Panel();
             this.imgTodayStatus = new System.Windows.Forms.Panel();
             this.imgSetWeek = new System.Windows.Forms.Panel();
             this.imgSetTooday = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnSetToday.SuspendLayout();
             this.pnApp.SuspendLayout();
             this.pnToday.SuspendLayout();
@@ -171,6 +173,8 @@
             // 
             // pnApp
             // 
+            this.pnApp.Controls.Add(this.label9);
+            this.pnApp.Controls.Add(this.label8);
             this.pnApp.Controls.Add(this.pnMenuTab);
             this.pnApp.Controls.Add(this.pnToday);
             this.pnApp.Controls.Add(this.btnSetWeek);
@@ -229,106 +233,106 @@
             // 
             // pnWeekDay5
             // 
-            this.pnWeekDay5.Controls.Add(this.label16);
-            this.pnWeekDay5.Controls.Add(this.label17);
-            this.pnWeekDay5.Controls.Add(this.panel10);
+            this.pnWeekDay5.Controls.Add(this.lbWeekDay5Date);
+            this.pnWeekDay5.Controls.Add(this.lbWeekDay5Temp);
+            this.pnWeekDay5.Controls.Add(this.imgWeekDay5);
             this.pnWeekDay5.Location = new System.Drawing.Point(559, 93);
             this.pnWeekDay5.Name = "pnWeekDay5";
             this.pnWeekDay5.Size = new System.Drawing.Size(133, 151);
             this.pnWeekDay5.TabIndex = 2;
             // 
-            // label16
+            // lbWeekDay5Date
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(17, 120);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(95, 19);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "2020-05-23";
+            this.lbWeekDay5Date.AutoSize = true;
+            this.lbWeekDay5Date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWeekDay5Date.Location = new System.Drawing.Point(17, 120);
+            this.lbWeekDay5Date.Name = "lbWeekDay5Date";
+            this.lbWeekDay5Date.Size = new System.Drawing.Size(95, 19);
+            this.lbWeekDay5Date.TabIndex = 1;
+            this.lbWeekDay5Date.Text = "2020-05-23";
             // 
-            // label17
+            // lbWeekDay5Temp
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(34, 84);
-            this.label17.MinimumSize = new System.Drawing.Size(60, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(60, 25);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "-25";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbWeekDay5Temp.AutoSize = true;
+            this.lbWeekDay5Temp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWeekDay5Temp.Location = new System.Drawing.Point(34, 84);
+            this.lbWeekDay5Temp.MinimumSize = new System.Drawing.Size(60, 0);
+            this.lbWeekDay5Temp.Name = "lbWeekDay5Temp";
+            this.lbWeekDay5Temp.Size = new System.Drawing.Size(60, 25);
+            this.lbWeekDay5Temp.TabIndex = 0;
+            this.lbWeekDay5Temp.Text = "-25";
+            this.lbWeekDay5Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnWeekDay4
             // 
-            this.pnWeekDay4.Controls.Add(this.label14);
-            this.pnWeekDay4.Controls.Add(this.label15);
-            this.pnWeekDay4.Controls.Add(this.panel8);
+            this.pnWeekDay4.Controls.Add(this.lbWeekDay4Date);
+            this.pnWeekDay4.Controls.Add(this.lbWeekDay4Temp);
+            this.pnWeekDay4.Controls.Add(this.imgWeekDay4);
             this.pnWeekDay4.Location = new System.Drawing.Point(420, 93);
             this.pnWeekDay4.Name = "pnWeekDay4";
             this.pnWeekDay4.Size = new System.Drawing.Size(133, 151);
             this.pnWeekDay4.TabIndex = 2;
             // 
-            // label14
+            // lbWeekDay4Date
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(17, 120);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 19);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "2020-05-22";
+            this.lbWeekDay4Date.AutoSize = true;
+            this.lbWeekDay4Date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWeekDay4Date.Location = new System.Drawing.Point(17, 120);
+            this.lbWeekDay4Date.Name = "lbWeekDay4Date";
+            this.lbWeekDay4Date.Size = new System.Drawing.Size(95, 19);
+            this.lbWeekDay4Date.TabIndex = 1;
+            this.lbWeekDay4Date.Text = "2020-05-22";
             // 
-            // label15
+            // lbWeekDay4Temp
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lbWeekDay4Temp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(34, 84);
-            this.label15.MinimumSize = new System.Drawing.Size(60, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 25);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "+15";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbWeekDay4Temp.AutoSize = true;
+            this.lbWeekDay4Temp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWeekDay4Temp.Location = new System.Drawing.Point(34, 84);
+            this.lbWeekDay4Temp.MinimumSize = new System.Drawing.Size(60, 0);
+            this.lbWeekDay4Temp.Name = "lbWeekDay4Temp";
+            this.lbWeekDay4Temp.Size = new System.Drawing.Size(60, 25);
+            this.lbWeekDay4Temp.TabIndex = 0;
+            this.lbWeekDay4Temp.Text = "+15";
+            this.lbWeekDay4Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnWeekDay3
             // 
-            this.pnWeekDay3.Controls.Add(this.label12);
-            this.pnWeekDay3.Controls.Add(this.label13);
-            this.pnWeekDay3.Controls.Add(this.panel6);
+            this.pnWeekDay3.Controls.Add(this.lbWeekDay3Date);
+            this.pnWeekDay3.Controls.Add(this.lbWeekDay3Temp);
+            this.pnWeekDay3.Controls.Add(this.imgWeekDay3);
             this.pnWeekDay3.Location = new System.Drawing.Point(281, 93);
             this.pnWeekDay3.Name = "pnWeekDay3";
             this.pnWeekDay3.Size = new System.Drawing.Size(133, 151);
             this.pnWeekDay3.TabIndex = 2;
             // 
-            // label12
+            // lbWeekDay3Date
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(17, 120);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 19);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "2020-05-21";
+            this.lbWeekDay3Date.AutoSize = true;
+            this.lbWeekDay3Date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWeekDay3Date.Location = new System.Drawing.Point(17, 120);
+            this.lbWeekDay3Date.Name = "lbWeekDay3Date";
+            this.lbWeekDay3Date.Size = new System.Drawing.Size(95, 19);
+            this.lbWeekDay3Date.TabIndex = 1;
+            this.lbWeekDay3Date.Text = "2020-05-21";
             // 
-            // label13
+            // lbWeekDay3Temp
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(34, 84);
-            this.label13.MinimumSize = new System.Drawing.Size(60, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 25);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "+12";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbWeekDay3Temp.AutoSize = true;
+            this.lbWeekDay3Temp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWeekDay3Temp.Location = new System.Drawing.Point(34, 84);
+            this.lbWeekDay3Temp.MinimumSize = new System.Drawing.Size(60, 0);
+            this.lbWeekDay3Temp.Name = "lbWeekDay3Temp";
+            this.lbWeekDay3Temp.Size = new System.Drawing.Size(60, 25);
+            this.lbWeekDay3Temp.TabIndex = 0;
+            this.lbWeekDay3Temp.Text = "+12";
+            this.lbWeekDay3Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnWeekDay2
             // 
-            this.pnWeekDay2.Controls.Add(this.label10);
+            this.pnWeekDay2.Controls.Add(this.lbWeekDay2Date);
             this.pnWeekDay2.Controls.Add(this.lbWeekDay2Temp);
             this.pnWeekDay2.Controls.Add(this.imgWeekDay2);
             this.pnWeekDay2.Location = new System.Drawing.Point(142, 93);
@@ -336,15 +340,15 @@
             this.pnWeekDay2.Size = new System.Drawing.Size(133, 151);
             this.pnWeekDay2.TabIndex = 2;
             // 
-            // label10
+            // lbWeekDay2Date
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(17, 120);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 19);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "2020-05-20";
+            this.lbWeekDay2Date.AutoSize = true;
+            this.lbWeekDay2Date.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWeekDay2Date.Location = new System.Drawing.Point(17, 120);
+            this.lbWeekDay2Date.Name = "lbWeekDay2Date";
+            this.lbWeekDay2Date.Size = new System.Drawing.Size(95, 19);
+            this.lbWeekDay2Date.TabIndex = 1;
+            this.lbWeekDay2Date.Text = "2020-05-20";
             // 
             // lbWeekDay2Temp
             // 
@@ -542,7 +546,7 @@
             // lbSetWeek
             // 
             this.lbSetWeek.AutoSize = true;
-            this.lbSetWeek.Location = new System.Drawing.Point(34, 84);
+            this.lbSetWeek.Location = new System.Drawing.Point(44, 84);
             this.lbSetWeek.Name = "lbSetWeek";
             this.lbSetWeek.Size = new System.Drawing.Size(147, 21);
             this.lbSetWeek.TabIndex = 0;
@@ -613,32 +617,32 @@
             this.btnClose.TabIndex = 1;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // panel10
+            // imgWeekDay5
             // 
-            this.panel10.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.penguin;
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Location = new System.Drawing.Point(34, 13);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(60, 60);
-            this.panel10.TabIndex = 0;
+            this.imgWeekDay5.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.penguin;
+            this.imgWeekDay5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay5.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay5.Name = "imgWeekDay5";
+            this.imgWeekDay5.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay5.TabIndex = 0;
             // 
-            // panel8
+            // imgWeekDay4
             // 
-            this.panel8.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.lightening;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Location = new System.Drawing.Point(34, 13);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(60, 60);
-            this.panel8.TabIndex = 0;
+            this.imgWeekDay4.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.lightening;
+            this.imgWeekDay4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay4.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay4.Name = "imgWeekDay4";
+            this.imgWeekDay4.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay4.TabIndex = 0;
             // 
-            // panel6
+            // imgWeekDay3
             // 
-            this.panel6.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.tornado;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Location = new System.Drawing.Point(34, 13);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(60, 60);
-            this.panel6.TabIndex = 0;
+            this.imgWeekDay3.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.tornado;
+            this.imgWeekDay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay3.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay3.Name = "imgWeekDay3";
+            this.imgWeekDay3.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay3.TabIndex = 0;
             // 
             // imgWeekDay2
             // 
@@ -696,6 +700,25 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(50, 50);
             this.btnSearch.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(576, 39);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(237, 21);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Время последнего запроса:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(813, 38);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 23);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "20:21";
             // 
             // MainForm
             // 
@@ -786,21 +809,23 @@
         private System.Windows.Forms.Label lbWeekDay1Temp;
         private System.Windows.Forms.Panel imgWeekDay1;
         private System.Windows.Forms.Panel pnWeekDay5;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label lbWeekDay5Date;
+        private System.Windows.Forms.Label lbWeekDay5Temp;
+        private System.Windows.Forms.Panel imgWeekDay5;
         private System.Windows.Forms.Panel pnWeekDay4;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label lbWeekDay4Date;
+        private System.Windows.Forms.Label lbWeekDay4Temp;
+        private System.Windows.Forms.Panel imgWeekDay4;
         private System.Windows.Forms.Panel pnWeekDay3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lbWeekDay3Date;
+        private System.Windows.Forms.Label lbWeekDay3Temp;
+        private System.Windows.Forms.Panel imgWeekDay3;
         private System.Windows.Forms.Panel pnWeekDay2;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbWeekDay2Date;
         private System.Windows.Forms.Label lbWeekDay2Temp;
         private System.Windows.Forms.Panel imgWeekDay2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
 
