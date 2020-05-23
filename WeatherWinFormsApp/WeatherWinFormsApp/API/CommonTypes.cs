@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace WeatherWinFormsApp.API
 {
-    class Rain
-    {
-        public float h = 0;
-    }
     class Coord
     {
         public float lon = 0;
@@ -30,7 +26,7 @@ namespace WeatherWinFormsApp.API
         public float feels_like = 0;
         public float temp_min = 0;
         public float temp_max = 0;
-        public float pressure = 0;
+        public int pressure = 0;
         public int humidity = 0;
         public float sea_level = 0;
         public float grnd_level = 0;
@@ -39,7 +35,7 @@ namespace WeatherWinFormsApp.API
     class Wind
     {
         public float speed = 0;
-        public int deg = 0;
+        public float deg = 0;
     }
     class Clouds
     {
