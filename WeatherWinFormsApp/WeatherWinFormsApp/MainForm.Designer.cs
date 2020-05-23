@@ -34,37 +34,11 @@
             this.lbSearch = new System.Windows.Forms.Label();
             this.pnSearchBorder = new System.Windows.Forms.Panel();
             this.btnSetToday = new System.Windows.Forms.Panel();
-            this.imgSetTooday = new System.Windows.Forms.Panel();
             this.lbSetToday = new System.Windows.Forms.Label();
             this.pnApp = new System.Windows.Forms.Panel();
-            this.pnWeek = new System.Windows.Forms.Panel();
-            this.pnWeekDay5 = new System.Windows.Forms.Panel();
-            this.lbWeekDay5Date = new System.Windows.Forms.Label();
-            this.lbWeekDay5Temp = new System.Windows.Forms.Label();
-            this.imgWeekDay5 = new System.Windows.Forms.Panel();
-            this.pnWeekDay4 = new System.Windows.Forms.Panel();
-            this.lbWeekDay4Date = new System.Windows.Forms.Label();
-            this.lbWeekDay4Temp = new System.Windows.Forms.Label();
-            this.imgWeekDay4 = new System.Windows.Forms.Panel();
-            this.pnWeekDay3 = new System.Windows.Forms.Panel();
-            this.lbWeekDay3Date = new System.Windows.Forms.Label();
-            this.lbWeekDay3Temp = new System.Windows.Forms.Label();
-            this.imgWeekDay3 = new System.Windows.Forms.Panel();
-            this.pnWeekDay2 = new System.Windows.Forms.Panel();
-            this.lbWeekDay2Date = new System.Windows.Forms.Label();
-            this.lbWeekDay2Temp = new System.Windows.Forms.Label();
-            this.imgWeekDay2 = new System.Windows.Forms.Panel();
-            this.lbWeekCityName = new System.Windows.Forms.Label();
-            this.pnWeekDay1 = new System.Windows.Forms.Panel();
-            this.lbWeekDay1Date = new System.Windows.Forms.Label();
-            this.lbWeekDay1Temp = new System.Windows.Forms.Label();
-            this.imgWeekDay1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pnMenuTab = new System.Windows.Forms.Panel();
             this.pnToday = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbTodayPressure = new System.Windows.Forms.Label();
+            this.lbTodayHumidity = new System.Windows.Forms.Label();
             this.lbTodayWind = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -75,27 +49,53 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbTodayDescription = new System.Windows.Forms.Label();
-            this.imgTodayStatus = new System.Windows.Forms.Panel();
             this.lbTodayCityName = new System.Windows.Forms.Label();
+            this.pnWeek = new System.Windows.Forms.Panel();
+            this.pnWeekDay5 = new System.Windows.Forms.Panel();
+            this.lbWeekDay5Date = new System.Windows.Forms.Label();
+            this.lbWeekDay5Temp = new System.Windows.Forms.Label();
+            this.pnWeekDay4 = new System.Windows.Forms.Panel();
+            this.lbWeekDay4Date = new System.Windows.Forms.Label();
+            this.lbWeekDay4Temp = new System.Windows.Forms.Label();
+            this.pnWeekDay3 = new System.Windows.Forms.Panel();
+            this.lbWeekDay3Date = new System.Windows.Forms.Label();
+            this.lbWeekDay3Temp = new System.Windows.Forms.Label();
+            this.pnWeekDay2 = new System.Windows.Forms.Panel();
+            this.lbWeekDay2Date = new System.Windows.Forms.Label();
+            this.lbWeekDay2Temp = new System.Windows.Forms.Label();
+            this.lbWeekCityName = new System.Windows.Forms.Label();
+            this.pnWeekDay1 = new System.Windows.Forms.Panel();
+            this.lbWeekDay1Date = new System.Windows.Forms.Label();
+            this.lbWeekDay1Temp = new System.Windows.Forms.Label();
+            this.lbLastRequest = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pnMenuTab = new System.Windows.Forms.Panel();
             this.btnSetWeek = new System.Windows.Forms.Panel();
-            this.imgSetWeek = new System.Windows.Forms.Panel();
             this.lbSetWeek = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Panel();
             this.pnError = new System.Windows.Forms.Panel();
             this.lbError = new System.Windows.Forms.Label();
             this.imgError = new System.Windows.Forms.Panel();
             this.pnNetworkStatus = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Panel();
+            this.imgTodayStatus = new System.Windows.Forms.Panel();
+            this.imgWeekDay5 = new System.Windows.Forms.Panel();
+            this.imgWeekDay4 = new System.Windows.Forms.Panel();
+            this.imgWeekDay3 = new System.Windows.Forms.Panel();
+            this.imgWeekDay2 = new System.Windows.Forms.Panel();
+            this.imgWeekDay1 = new System.Windows.Forms.Panel();
+            this.imgSetWeek = new System.Windows.Forms.Panel();
+            this.imgSetTooday = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Panel();
             this.btnSetToday.SuspendLayout();
             this.pnApp.SuspendLayout();
+            this.pnToday.SuspendLayout();
             this.pnWeek.SuspendLayout();
             this.pnWeekDay5.SuspendLayout();
             this.pnWeekDay4.SuspendLayout();
             this.pnWeekDay3.SuspendLayout();
             this.pnWeekDay2.SuspendLayout();
             this.pnWeekDay1.SuspendLayout();
-            this.pnToday.SuspendLayout();
             this.btnSetWeek.SuspendLayout();
             this.pnError.SuspendLayout();
             this.SuspendLayout();
@@ -162,17 +162,6 @@
             this.btnSetToday.TabIndex = 9;
             this.btnSetToday.Click += new System.EventHandler(this.btnSetToday_Click);
             // 
-            // imgSetTooday
-            // 
-            this.imgSetTooday.BackColor = System.Drawing.Color.Transparent;
-            this.imgSetTooday.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.today;
-            this.imgSetTooday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgSetTooday.Location = new System.Drawing.Point(79, 11);
-            this.imgSetTooday.Name = "imgSetTooday";
-            this.imgSetTooday.Size = new System.Drawing.Size(70, 70);
-            this.imgSetTooday.TabIndex = 1;
-            this.imgSetTooday.Click += new System.EventHandler(this.imgSetTooday_Click);
-            // 
             // lbSetToday
             // 
             this.lbSetToday.AutoSize = true;
@@ -187,7 +176,7 @@
             // 
             this.pnApp.Controls.Add(this.pnToday);
             this.pnApp.Controls.Add(this.pnWeek);
-            this.pnApp.Controls.Add(this.label9);
+            this.pnApp.Controls.Add(this.lbLastRequest);
             this.pnApp.Controls.Add(this.label8);
             this.pnApp.Controls.Add(this.pnMenuTab);
             this.pnApp.Controls.Add(this.btnSetWeek);
@@ -200,6 +189,155 @@
             this.pnApp.Name = "pnApp";
             this.pnApp.Size = new System.Drawing.Size(1100, 488);
             this.pnApp.TabIndex = 11;
+            // 
+            // pnToday
+            // 
+            this.pnToday.Controls.Add(this.lbTodayPressure);
+            this.pnToday.Controls.Add(this.lbTodayHumidity);
+            this.pnToday.Controls.Add(this.lbTodayWind);
+            this.pnToday.Controls.Add(this.label5);
+            this.pnToday.Controls.Add(this.label4);
+            this.pnToday.Controls.Add(this.lbTodayTemp);
+            this.pnToday.Controls.Add(this.label3);
+            this.pnToday.Controls.Add(this.lbTodayLat);
+            this.pnToday.Controls.Add(this.lbTodayLon);
+            this.pnToday.Controls.Add(this.label2);
+            this.pnToday.Controls.Add(this.label1);
+            this.pnToday.Controls.Add(this.lbTodayDescription);
+            this.pnToday.Controls.Add(this.imgTodayStatus);
+            this.pnToday.Controls.Add(this.lbTodayCityName);
+            this.pnToday.Location = new System.Drawing.Point(338, 187);
+            this.pnToday.Name = "pnToday";
+            this.pnToday.Size = new System.Drawing.Size(696, 260);
+            this.pnToday.TabIndex = 11;
+            // 
+            // lbTodayPressure
+            // 
+            this.lbTodayPressure.AutoSize = true;
+            this.lbTodayPressure.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayPressure.Location = new System.Drawing.Point(227, 217);
+            this.lbTodayPressure.Name = "lbTodayPressure";
+            this.lbTodayPressure.Size = new System.Drawing.Size(127, 37);
+            this.lbTodayPressure.TabIndex = 13;
+            this.lbTodayPressure.Text = "970 гПа";
+            // 
+            // lbTodayHumidity
+            // 
+            this.lbTodayHumidity.AutoSize = true;
+            this.lbTodayHumidity.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayHumidity.Location = new System.Drawing.Point(227, 178);
+            this.lbTodayHumidity.Name = "lbTodayHumidity";
+            this.lbTodayHumidity.Size = new System.Drawing.Size(82, 37);
+            this.lbTodayHumidity.TabIndex = 12;
+            this.lbTodayHumidity.Text = "67 %";
+            // 
+            // lbTodayWind
+            // 
+            this.lbTodayWind.AutoSize = true;
+            this.lbTodayWind.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayWind.Location = new System.Drawing.Point(227, 139);
+            this.lbTodayWind.Name = "lbTodayWind";
+            this.lbTodayWind.Size = new System.Drawing.Size(260, 37);
+            this.lbTodayWind.TabIndex = 11;
+            this.lbTodayWind.Text = "Северный 2 м/c";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(43, 217);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(174, 37);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Давление:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(43, 180);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(189, 37);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Влажность:";
+            // 
+            // lbTodayTemp
+            // 
+            this.lbTodayTemp.AutoSize = true;
+            this.lbTodayTemp.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayTemp.Location = new System.Drawing.Point(536, 23);
+            this.lbTodayTemp.Name = "lbTodayTemp";
+            this.lbTodayTemp.Size = new System.Drawing.Size(100, 70);
+            this.lbTodayTemp.TabIndex = 8;
+            this.lbTodayTemp.Text = "+8";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(43, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 37);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Ветер:";
+            // 
+            // lbTodayLat
+            // 
+            this.lbTodayLat.AutoSize = true;
+            this.lbTodayLat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayLat.Location = new System.Drawing.Point(623, 223);
+            this.lbTodayLat.Name = "lbTodayLat";
+            this.lbTodayLat.Size = new System.Drawing.Size(60, 23);
+            this.lbTodayLat.TabIndex = 6;
+            this.lbTodayLat.Text = "63.57";
+            // 
+            // lbTodayLon
+            // 
+            this.lbTodayLon.AutoSize = true;
+            this.lbTodayLon.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayLon.Location = new System.Drawing.Point(623, 188);
+            this.lbTodayLon.Name = "lbTodayLon";
+            this.lbTodayLon.Size = new System.Drawing.Size(60, 23);
+            this.lbTodayLon.TabIndex = 5;
+            this.lbTodayLon.Text = "53.68";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(544, 222);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 23);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Долгота:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(544, 187);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Широта:";
+            // 
+            // lbTodayDescription
+            // 
+            this.lbTodayDescription.AutoSize = true;
+            this.lbTodayDescription.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayDescription.Location = new System.Drawing.Point(163, 93);
+            this.lbTodayDescription.Name = "lbTodayDescription";
+            this.lbTodayDescription.Size = new System.Drawing.Size(394, 37);
+            this.lbTodayDescription.TabIndex = 2;
+            this.lbTodayDescription.Text = "Облачно с прояснением";
+            // 
+            // lbTodayCityName
+            // 
+            this.lbTodayCityName.AutoSize = true;
+            this.lbTodayCityName.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTodayCityName.Location = new System.Drawing.Point(158, 21);
+            this.lbTodayCityName.Name = "lbTodayCityName";
+            this.lbTodayCityName.Size = new System.Drawing.Size(174, 70);
+            this.lbTodayCityName.TabIndex = 0;
+            this.lbTodayCityName.Text = "Ухта";
             // 
             // pnWeek
             // 
@@ -246,15 +384,6 @@
             this.lbWeekDay5Temp.Text = "-25";
             this.lbWeekDay5Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imgWeekDay5
-            // 
-            this.imgWeekDay5.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.penguin;
-            this.imgWeekDay5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgWeekDay5.Location = new System.Drawing.Point(34, 13);
-            this.imgWeekDay5.Name = "imgWeekDay5";
-            this.imgWeekDay5.Size = new System.Drawing.Size(60, 60);
-            this.imgWeekDay5.TabIndex = 0;
-            // 
             // pnWeekDay4
             // 
             this.pnWeekDay4.Controls.Add(this.lbWeekDay4Date);
@@ -290,15 +419,6 @@
             this.lbWeekDay4Temp.Text = "+15";
             this.lbWeekDay4Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imgWeekDay4
-            // 
-            this.imgWeekDay4.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.lightening;
-            this.imgWeekDay4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgWeekDay4.Location = new System.Drawing.Point(34, 13);
-            this.imgWeekDay4.Name = "imgWeekDay4";
-            this.imgWeekDay4.Size = new System.Drawing.Size(60, 60);
-            this.imgWeekDay4.TabIndex = 0;
-            // 
             // pnWeekDay3
             // 
             this.pnWeekDay3.Controls.Add(this.lbWeekDay3Date);
@@ -331,15 +451,6 @@
             this.lbWeekDay3Temp.Text = "+12";
             this.lbWeekDay3Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imgWeekDay3
-            // 
-            this.imgWeekDay3.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.tornado;
-            this.imgWeekDay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgWeekDay3.Location = new System.Drawing.Point(34, 13);
-            this.imgWeekDay3.Name = "imgWeekDay3";
-            this.imgWeekDay3.Size = new System.Drawing.Size(60, 60);
-            this.imgWeekDay3.TabIndex = 0;
-            // 
             // pnWeekDay2
             // 
             this.pnWeekDay2.Controls.Add(this.lbWeekDay2Date);
@@ -371,15 +482,6 @@
             this.lbWeekDay2Temp.TabIndex = 0;
             this.lbWeekDay2Temp.Text = "+2";
             this.lbWeekDay2Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // imgWeekDay2
-            // 
-            this.imgWeekDay2.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.umbrella;
-            this.imgWeekDay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgWeekDay2.Location = new System.Drawing.Point(34, 13);
-            this.imgWeekDay2.Name = "imgWeekDay2";
-            this.imgWeekDay2.Size = new System.Drawing.Size(60, 60);
-            this.imgWeekDay2.TabIndex = 0;
             // 
             // lbWeekCityName
             // 
@@ -423,24 +525,15 @@
             this.lbWeekDay1Temp.Text = "+8";
             this.lbWeekDay1Temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // imgWeekDay1
+            // lbLastRequest
             // 
-            this.imgWeekDay1.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.sun;
-            this.imgWeekDay1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgWeekDay1.Location = new System.Drawing.Point(34, 13);
-            this.imgWeekDay1.Name = "imgWeekDay1";
-            this.imgWeekDay1.Size = new System.Drawing.Size(60, 60);
-            this.imgWeekDay1.TabIndex = 0;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(881, 40);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 28);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "20:21";
+            this.lbLastRequest.AutoSize = true;
+            this.lbLastRequest.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbLastRequest.Location = new System.Drawing.Point(881, 40);
+            this.lbLastRequest.Name = "lbLastRequest";
+            this.lbLastRequest.Size = new System.Drawing.Size(71, 28);
+            this.lbLastRequest.TabIndex = 14;
+            this.lbLastRequest.Text = "20:21";
             // 
             // label8
             // 
@@ -459,164 +552,6 @@
             this.pnMenuTab.Size = new System.Drawing.Size(8, 121);
             this.pnMenuTab.TabIndex = 13;
             // 
-            // pnToday
-            // 
-            this.pnToday.Controls.Add(this.label7);
-            this.pnToday.Controls.Add(this.label6);
-            this.pnToday.Controls.Add(this.lbTodayWind);
-            this.pnToday.Controls.Add(this.label5);
-            this.pnToday.Controls.Add(this.label4);
-            this.pnToday.Controls.Add(this.lbTodayTemp);
-            this.pnToday.Controls.Add(this.label3);
-            this.pnToday.Controls.Add(this.lbTodayLat);
-            this.pnToday.Controls.Add(this.lbTodayLon);
-            this.pnToday.Controls.Add(this.label2);
-            this.pnToday.Controls.Add(this.label1);
-            this.pnToday.Controls.Add(this.lbTodayDescription);
-            this.pnToday.Controls.Add(this.imgTodayStatus);
-            this.pnToday.Controls.Add(this.lbTodayCityName);
-            this.pnToday.Location = new System.Drawing.Point(338, 187);
-            this.pnToday.Name = "pnToday";
-            this.pnToday.Size = new System.Drawing.Size(696, 260);
-            this.pnToday.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(227, 217);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 37);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "970 гПа";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(227, 178);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 37);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "67 %";
-            // 
-            // lbTodayWind
-            // 
-            this.lbTodayWind.AutoSize = true;
-            this.lbTodayWind.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTodayWind.Location = new System.Drawing.Point(227, 139);
-            this.lbTodayWind.Name = "lbTodayWind";
-            this.lbTodayWind.Size = new System.Drawing.Size(260, 37);
-            this.lbTodayWind.TabIndex = 11;
-            this.lbTodayWind.Text = "Северный 2 м/c";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(43, 217);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 37);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Давление:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(43, 180);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(189, 37);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Влажность:";
-            // 
-            // lbTodayTemp
-            // 
-            this.lbTodayTemp.AutoSize = true;
-            this.lbTodayTemp.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTodayTemp.Location = new System.Drawing.Point(342, 21);
-            this.lbTodayTemp.Name = "lbTodayTemp";
-            this.lbTodayTemp.Size = new System.Drawing.Size(100, 70);
-            this.lbTodayTemp.TabIndex = 8;
-            this.lbTodayTemp.Text = "+8";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(43, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 37);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Ветер:";
-            // 
-            // lbTodayLat
-            // 
-            this.lbTodayLat.AutoSize = true;
-            this.lbTodayLat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTodayLat.Location = new System.Drawing.Point(635, 58);
-            this.lbTodayLat.Name = "lbTodayLat";
-            this.lbTodayLat.Size = new System.Drawing.Size(60, 23);
-            this.lbTodayLat.TabIndex = 6;
-            this.lbTodayLat.Text = "63.57";
-            // 
-            // lbTodayLon
-            // 
-            this.lbTodayLon.AutoSize = true;
-            this.lbTodayLon.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTodayLon.Location = new System.Drawing.Point(635, 23);
-            this.lbTodayLon.Name = "lbTodayLon";
-            this.lbTodayLon.Size = new System.Drawing.Size(60, 23);
-            this.lbTodayLon.TabIndex = 5;
-            this.lbTodayLon.Text = "53.68";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(556, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Долгота:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(556, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Широта:";
-            // 
-            // lbTodayDescription
-            // 
-            this.lbTodayDescription.AutoSize = true;
-            this.lbTodayDescription.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTodayDescription.Location = new System.Drawing.Point(163, 93);
-            this.lbTodayDescription.Name = "lbTodayDescription";
-            this.lbTodayDescription.Size = new System.Drawing.Size(394, 37);
-            this.lbTodayDescription.TabIndex = 2;
-            this.lbTodayDescription.Text = "Облачно с прояснением";
-            // 
-            // imgTodayStatus
-            // 
-            this.imgTodayStatus.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.cloudy;
-            this.imgTodayStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgTodayStatus.Location = new System.Drawing.Point(43, 21);
-            this.imgTodayStatus.Name = "imgTodayStatus";
-            this.imgTodayStatus.Size = new System.Drawing.Size(100, 100);
-            this.imgTodayStatus.TabIndex = 1;
-            // 
-            // lbTodayCityName
-            // 
-            this.lbTodayCityName.AutoSize = true;
-            this.lbTodayCityName.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTodayCityName.Location = new System.Drawing.Point(158, 21);
-            this.lbTodayCityName.Name = "lbTodayCityName";
-            this.lbTodayCityName.Size = new System.Drawing.Size(174, 70);
-            this.lbTodayCityName.TabIndex = 0;
-            this.lbTodayCityName.Text = "Ухта";
-            // 
             // btnSetWeek
             // 
             this.btnSetWeek.Controls.Add(this.imgSetWeek);
@@ -628,17 +563,6 @@
             this.btnSetWeek.TabIndex = 10;
             this.btnSetWeek.Click += new System.EventHandler(this.btnSetWeek_Click);
             // 
-            // imgSetWeek
-            // 
-            this.imgSetWeek.BackColor = System.Drawing.Color.Transparent;
-            this.imgSetWeek.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.calendar;
-            this.imgSetWeek.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgSetWeek.Location = new System.Drawing.Point(79, 11);
-            this.imgSetWeek.Name = "imgSetWeek";
-            this.imgSetWeek.Size = new System.Drawing.Size(70, 70);
-            this.imgSetWeek.TabIndex = 1;
-            this.imgSetWeek.Click += new System.EventHandler(this.imgSetWeek_Click);
-            // 
             // lbSetWeek
             // 
             this.lbSetWeek.AutoSize = true;
@@ -649,21 +573,11 @@
             this.lbSetWeek.Text = "погода на 5 дней";
             this.lbSetWeek.Click += new System.EventHandler(this.lbSetWeek_Click);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.Search_ico;
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Location = new System.Drawing.Point(441, 72);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(50, 50);
-            this.btnSearch.TabIndex = 7;
-            // 
             // pnError
             // 
             this.pnError.Controls.Add(this.lbError);
             this.pnError.Controls.Add(this.imgError);
-            this.pnError.Location = new System.Drawing.Point(46, 133);
+            this.pnError.Location = new System.Drawing.Point(1167, 136);
             this.pnError.Name = "pnError";
             this.pnError.Size = new System.Drawing.Size(1097, 488);
             this.pnError.TabIndex = 12;
@@ -724,6 +638,93 @@
             this.btnClose.TabIndex = 1;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // imgTodayStatus
+            // 
+            this.imgTodayStatus.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.sun;
+            this.imgTodayStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgTodayStatus.Location = new System.Drawing.Point(43, 21);
+            this.imgTodayStatus.Name = "imgTodayStatus";
+            this.imgTodayStatus.Size = new System.Drawing.Size(100, 100);
+            this.imgTodayStatus.TabIndex = 1;
+            // 
+            // imgWeekDay5
+            // 
+            this.imgWeekDay5.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.penguin;
+            this.imgWeekDay5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay5.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay5.Name = "imgWeekDay5";
+            this.imgWeekDay5.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay5.TabIndex = 0;
+            // 
+            // imgWeekDay4
+            // 
+            this.imgWeekDay4.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.lightening;
+            this.imgWeekDay4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay4.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay4.Name = "imgWeekDay4";
+            this.imgWeekDay4.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay4.TabIndex = 0;
+            // 
+            // imgWeekDay3
+            // 
+            this.imgWeekDay3.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.tornado;
+            this.imgWeekDay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay3.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay3.Name = "imgWeekDay3";
+            this.imgWeekDay3.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay3.TabIndex = 0;
+            // 
+            // imgWeekDay2
+            // 
+            this.imgWeekDay2.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.umbrella;
+            this.imgWeekDay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay2.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay2.Name = "imgWeekDay2";
+            this.imgWeekDay2.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay2.TabIndex = 0;
+            // 
+            // imgWeekDay1
+            // 
+            this.imgWeekDay1.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.sun;
+            this.imgWeekDay1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgWeekDay1.Location = new System.Drawing.Point(34, 13);
+            this.imgWeekDay1.Name = "imgWeekDay1";
+            this.imgWeekDay1.Size = new System.Drawing.Size(60, 60);
+            this.imgWeekDay1.TabIndex = 0;
+            // 
+            // imgSetWeek
+            // 
+            this.imgSetWeek.BackColor = System.Drawing.Color.Transparent;
+            this.imgSetWeek.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.calendar;
+            this.imgSetWeek.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgSetWeek.Location = new System.Drawing.Point(79, 11);
+            this.imgSetWeek.Name = "imgSetWeek";
+            this.imgSetWeek.Size = new System.Drawing.Size(70, 70);
+            this.imgSetWeek.TabIndex = 1;
+            this.imgSetWeek.Click += new System.EventHandler(this.imgSetWeek_Click);
+            // 
+            // imgSetTooday
+            // 
+            this.imgSetTooday.BackColor = System.Drawing.Color.Transparent;
+            this.imgSetTooday.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.today;
+            this.imgSetTooday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgSetTooday.Location = new System.Drawing.Point(79, 11);
+            this.imgSetTooday.Name = "imgSetTooday";
+            this.imgSetTooday.Size = new System.Drawing.Size(70, 70);
+            this.imgSetTooday.TabIndex = 1;
+            this.imgSetTooday.Click += new System.EventHandler(this.imgSetTooday_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackgroundImage = global::WeatherWinFormsApp.Properties.Resources.Search_ico;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Location = new System.Drawing.Point(441, 72);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(50, 50);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -747,6 +748,8 @@
             this.btnSetToday.PerformLayout();
             this.pnApp.ResumeLayout(false);
             this.pnApp.PerformLayout();
+            this.pnToday.ResumeLayout(false);
+            this.pnToday.PerformLayout();
             this.pnWeek.ResumeLayout(false);
             this.pnWeek.PerformLayout();
             this.pnWeekDay5.ResumeLayout(false);
@@ -759,8 +762,6 @@
             this.pnWeekDay2.PerformLayout();
             this.pnWeekDay1.ResumeLayout(false);
             this.pnWeekDay1.PerformLayout();
-            this.pnToday.ResumeLayout(false);
-            this.pnToday.PerformLayout();
             this.btnSetWeek.ResumeLayout(false);
             this.btnSetWeek.PerformLayout();
             this.pnError.ResumeLayout(false);
@@ -802,8 +803,8 @@
         private System.Windows.Forms.Label lbTodayDescription;
         private System.Windows.Forms.Label lbTodayTemp;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbTodayPressure;
+        private System.Windows.Forms.Label lbTodayHumidity;
         private System.Windows.Forms.Label lbTodayWind;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -829,7 +830,7 @@
         private System.Windows.Forms.Label lbWeekDay2Temp;
         private System.Windows.Forms.Panel imgWeekDay2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbLastRequest;
     }
 }
 
