@@ -15,6 +15,8 @@ namespace WeatherWinFormsApp.API
         public int visibility = 0;
         public Wind wind = new Wind();
         public Clouds clouds = new Clouds();
+        public Dictionary<string, float> rain = new Dictionary<string, float> { { "1h", 0 }, { "3h", 0 } };
+        public Dictionary<string, float> snow = new Dictionary<string, float> { { "1h", 0 }, { "3h", 0 } };
         public int dt = 0;
         public Sys sys = new Sys();
         public int timezone = 0;

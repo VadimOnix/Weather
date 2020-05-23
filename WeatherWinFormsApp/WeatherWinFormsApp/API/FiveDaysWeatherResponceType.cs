@@ -13,7 +13,8 @@ namespace WeatherWinFormsApp.API
         public List<WeatherItem> weather = new List<WeatherItem>();
         public Clouds clouds = new Clouds();
         public Wind wind = new Wind();
-        public Dictionary<string,float> rain = new Dictionary<string, float> { { "3h", 0 } };
+        public Dictionary<string,float> rain = new Dictionary<string, float> { { "1h", 0 },{ "3h", 0 } };
+        public Dictionary<string, float> snow = new Dictionary<string, float> { { "1h", 0 }, { "3h", 0 } };
         public Dictionary<string,string> sys = new Dictionary<string, string> { { "pod", "" } };
         public string dt_txt = "";
     }
