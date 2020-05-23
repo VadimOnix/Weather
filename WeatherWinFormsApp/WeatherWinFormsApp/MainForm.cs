@@ -31,6 +31,7 @@ namespace WeatherWinFormsApp
             if (rainIntense > 4) return WeatherWinFormsApp.Properties.Resources.lightening;
             if (temp > 0 && windSpeed < 3 && cloud > 35 && rainIntense < 1 && snowIntense < 1) return WeatherWinFormsApp.Properties.Resources.cloudy;
             return WeatherWinFormsApp.Properties.Resources.cloudy;
+
         }
 
         private void Rerender()
