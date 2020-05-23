@@ -17,7 +17,6 @@ namespace WeatherWinFormsApp
 {
     public partial class MainForm : Form
     {
-        private WeatherAPI WeatherAPI = new WeatherAPI();
         public MainForm()
         {
             InitializeComponent();
@@ -41,14 +40,40 @@ namespace WeatherWinFormsApp
 
         private void btnSetToday_Click(object sender, EventArgs e)
         {
-                pnMenuTab.Top = btnSetToday.Top;
-                pnMenuTab.Height = btnSetToday.Height;
+            pnMenuTab.Top = btnSetToday.Top;
+            pnMenuTab.Height = btnSetToday.Height;
+
+            //поднятие наверх панели погоды на сегодня
+            pnToday.BringToFront();
         }
 
         private void btnSetWeek_Click(object sender, EventArgs e)
         {
             pnMenuTab.Height = btnSetWeek.Height;
             pnMenuTab.Top = btnSetWeek.Top;
+
+            //поднятие наверх панели погоды на 5 дней
+            pnWeek.BringToFront();
+        }
+
+        private void imgSetTooday_Click(object sender, EventArgs e)
+        {
+            btnSetToday_Click(sender, e);
+        }
+
+        private void lbSetToday_Click(object sender, EventArgs e)
+        {
+            btnSetToday_Click(sender, e);
+        }
+
+        private void imgSetWeek_Click(object sender, EventArgs e)
+        {
+            btnSetWeek_Click(sender, e);
+        }
+
+        private void lbSetWeek_Click(object sender, EventArgs e)
+        {
+            btnSetWeek_Click(sender, e);
         }
     }
 }
