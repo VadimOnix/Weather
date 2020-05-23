@@ -154,10 +154,13 @@
   <data name="lightening" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\img\icons_png\weather\lightening.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="penguin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\img\icons_png\weather\penguin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\img\icons_png\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="penguin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\img\icons_png\weather\penguin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="snowflake-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\img\icons_png\weather\snowflake-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
