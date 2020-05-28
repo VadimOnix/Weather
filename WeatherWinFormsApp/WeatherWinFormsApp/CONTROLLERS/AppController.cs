@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WeatherWinFormsApp.API;
 using WeatherWinFormsApp.MODEL;
+using WeatherWinFormsApp.UTILS;
 
 namespace WeatherWinFormsApp.CONTROLLERS
 {
@@ -12,7 +9,14 @@ namespace WeatherWinFormsApp.CONTROLLERS
     {
         WeatherAPI WeatherAPI = new WeatherAPI();
         public static CurrentWeather CurrentWeather = new CurrentWeather();
+        public static WeekWeather WeekWeather = new WeekWeather();
 
+        private ConnectChecker connectChecker = new ConnectChecker(); 
+
+        public bool CheckConnect()
+        {
+            return connectChecker.IsAvailable();
+        }
 
         public void GetWeather(string cityName, bool onOneDay)
         {
@@ -21,9 +25,53 @@ namespace WeatherWinFormsApp.CONTROLLERS
                 var responce = WeatherAPI.GetResponceOnOneDayByCityName(cityName);
                 FillCurrentWeather(cityName, responce);
             }
+            else
+            {
+                var responce = WeatherAPI.GetFiveDaysResponceByCityName(cityName);
+                FillFiveDaysWeather(cityName, responce);
+            }
+
         }
 
-        private void FillCurrentWeather(string cityName,CurrentWeatherResponceType responce)
+
+        private void FillFiveDaysWeather(string cityName, FiveDaysWeatherResponceType responce)
+        {
+            try
+            {
+                WeekWeather.Days.Clear();
+
+                WeekWeather.CityName = cityName;
+                for (int i = 0; i < 40; i += 8)
+                {
+                    var day = new Day();
+                    day.Temp = Convert.ToInt32(responce.list[i].Main.temp);
+                    day.Clouds = responce.list[i].clouds.all;
+
+                    if (responce.list[i].rain["1h"] > 0 || responce.list[i].rain["3h"] > 0)
+                    {
+                        day.RainIntensive = responce.list[i].rain["1h"] > responce.list[i].rain["3h"] ? responce.list[i].rain["1h"] : responce.list[i].rain["3h"];
+                    }
+
+                    if (responce.list[i].snow["1h"] > 0 || responce.list[i].snow["3h"] > 0)
+                    {
+                        day.SnowIntensive = responce.list[i].snow["1h"] > responce.list[i].snow["3h"] ? responce.list[i].snow["1h"] : responce.list[i].snow["3h"];
+                    }
+
+
+                    day.Date = responce.list[i].dt_txt;
+
+                    WeekWeather.Days.Add(day);
+
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{e.Message}\n{e.StackTrace}\n{e.InnerException}");
+            }
+        }
+
+
+        private void FillCurrentWeather(string cityName, CurrentWeatherResponceType responce)
         {
             try
             {
@@ -48,7 +96,8 @@ namespace WeatherWinFormsApp.CONTROLLERS
                 {
                     CurrentWeather.SnowIntensive = responce.snow["1h"] > responce.snow["3h"] ? responce.snow["1h"] : responce.snow["3h"];
                 }
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 Console.WriteLine($"{e.Message}\n{e.StackTrace}\n{e.InnerException}");
             }
