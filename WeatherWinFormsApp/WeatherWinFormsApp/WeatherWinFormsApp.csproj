@@ -57,7 +57,6 @@
     <Compile Include="API\FiveDaysWeatherResponceType.cs" />
     <Compile Include="API\CurrentWeatherResponceType.cs" />
     <Compile Include="CONTROLLERS\AppController.cs" />
-    <Compile Include="CONTROLLERS\ConvertDataController.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +65,7 @@
     </Compile>
     <Compile Include="MODEL\CurrentWeather.cs" />
     <Compile Include="API\WeatherAPI.cs" />
+    <Compile Include="MODEL\WeekWeather.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UTILS\ConnectChecker.cs" />
@@ -83,7 +83,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\WeatherWinFormsApp.MODEL.CurrentWeather.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -143,6 +142,8 @@
     <Content Include="assets\img\icons_png\грустный-png-2.png" />
     <Content Include="Этапы дизайна формы.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
