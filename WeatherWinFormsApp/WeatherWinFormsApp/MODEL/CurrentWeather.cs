@@ -2,7 +2,7 @@
 
 namespace WeatherWinFormsApp.MODEL
 {
-    class CurrentWeather
+    public class CurrentWeather
     {
         private string cityName = "";
         private string description = "";

@@ -2,7 +2,7 @@
 
 namespace WeatherWinFormsApp.MODEL
 {
-    class Day
+    public class Day
     {
         
         private int temp = 0;
@@ -20,12 +20,12 @@ namespace WeatherWinFormsApp.MODEL
         public string Date { get => date; set => date = value; }
     }
 
-    class WeekWeather
+    public class WeekWeather
     {
         private List<Day> days = new List<Day>();
         private string cityName = "";
 
         public string CityName { get => cityName; set => cityName = value; }
-        internal List<Day> Days { get => days; set => days = value; }
+        public List<Day> Days { get => days; set => days = value; }
     }
 }

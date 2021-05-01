@@ -5,7 +5,7 @@ namespace WeatherWinFormsApp.UTILS
     /// <summary>
     /// Класс, проверяющий интернет соединение
     /// </summary>
-    class ConnectChecker
+    public class ConnectChecker
     {
         public bool IsAvailable()
         {

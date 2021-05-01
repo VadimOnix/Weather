@@ -5,7 +5,7 @@ using WeatherWinFormsApp.UTILS;
 
 namespace WeatherWinFormsApp.CONTROLLERS
 {
-    class AppController
+    public class AppController
     {
         WeatherAPI WeatherAPI = new WeatherAPI();
         public static CurrentWeather CurrentWeather = new CurrentWeather();
