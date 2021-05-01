@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="calendar.png" />
+    <None Remove="celsius.png" />
+    <None Remove="close_red.png" />
+    <None Remove="cloudy-day.png" />
+    <None Remove="cloudy.png" />
+    <None Remove="hurricane.png" />
+    <None Remove="lightening.png" />
+    <None Remove="penguin.png" />
+    <None Remove="rain-2.png" />
+    <None Remove="Search_ico.png" />
+    <None Remove="snowflake-1.png" />
+    <None Remove="snowflake.png" />
+    <None Remove="summer.png" />
+    <None Remove="sun.png" />
+    <None Remove="today.png" />
+    <None Remove="tornado.png" />
+    <None Remove="umbrella.png" />
+    <None Remove="wind.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherWinFormsApp\WeatherWinFormsApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="calendar.png" />
+    <Resource Include="celsius.png" />
+    <Resource Include="close_red.png" />
+    <Resource Include="cloudy-day.png" />
+    <Resource Include="cloudy.png" />
+    <Resource Include="hurricane.png" />
+    <Resource Include="lightening.png" />
+    <Resource Include="penguin.png" />
+    <Resource Include="rain-2.png" />
+    <Resource Include="Search_ico.png" />
+    <Resource Include="snowflake-1.png" />
+    <Resource Include="snowflake.png" />
+    <Resource Include="summer.png" />
+    <Resource Include="sun.png" />
+    <Resource Include="today.png" />
+    <Resource Include="tornado.png" />
+    <Resource Include="umbrella.png" />
+    <Resource Include="wind.png" />
+  </ItemGroup>
+
+</Project>
